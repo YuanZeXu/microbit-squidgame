@@ -1,4 +1,6 @@
+let light2 = 0
 input.onButtonPressed(Button.A, function () {
+    light2 = 0
     music.setTempo(120)
     music.playTone(494, music.beat(BeatFraction.Half))
     music.playTone(494, music.beat(BeatFraction.Half))
@@ -29,6 +31,7 @@ input.onButtonPressed(Button.A, function () {
     music.playTone(330, music.beat(BeatFraction.Whole))
 })
 input.onButtonPressed(Button.B, function () {
+    light2 = 1
     music.setTempo(90)
     music.playTone(466, music.beat(BeatFraction.Half))
     music.playTone(622, music.beat(BeatFraction.Half))
@@ -53,7 +56,12 @@ input.onButtonPressed(Button.B, function () {
     music.playTone(554, music.beat(BeatFraction.Half))
 })
 basic.forever(function () {
-    basic.showIcon(IconNames.Diamond)
-    basic.showIcon(IconNames.Triangle)
-    basic.showIcon(IconNames.Square)
+    if (light2 >= 1) {
+        basic.showString("123")
+        basic.showIcon(IconNames.StickFigure)
+    } else {
+        basic.showIcon(IconNames.Diamond)
+        basic.showIcon(IconNames.Triangle)
+        basic.showIcon(IconNames.Square)
+    }
 })
