@@ -52,3 +52,14 @@ input.onButtonPressed(Button.B, function () {
     music.playTone(466, music.beat(BeatFraction.Half))
     music.playTone(554, music.beat(BeatFraction.Half))
 })
+basic.forever(function () {
+    basic.showLeds(`
+        . . # . .
+        . # . # .
+        # . . . #
+        . # . # .
+        . . # . .
+        `)
+    basic.showIcon(IconNames.Triangle)
+    basic.showIcon(IconNames.Square)
+})
