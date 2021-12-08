@@ -56,8 +56,10 @@ input.onButtonPressed(Button.B, function () {
     music.playTone(554, music.beat(BeatFraction.Half))
 })
 basic.forever(function () {
-    if (light2 >= 1) {
-        basic.showString("123")
+    if (light2 == 1) {
+        basic.showString("1")
+        basic.showString("2")
+        basic.showString("3")
         basic.showIcon(IconNames.StickFigure)
     } else {
         basic.showIcon(IconNames.Diamond)
