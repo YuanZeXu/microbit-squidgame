@@ -24,8 +24,3 @@
 此影像可能需要幾分鐘的時間重新整理。
 
 ![各個程式積木渲染後的視圖](https://github.com/yuanzexu/microbit-squidgame/raw/master/.github/makecode/blocks.png)
-
-#### 中繼資料 (用於搜索、渲染)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
