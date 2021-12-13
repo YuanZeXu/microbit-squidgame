@@ -1,5 +1,6 @@
 let light2 = 0
 input.onButtonPressed(Button.A, function () {
+    music.stopAllSounds()
     light2 = 0
     music.setTempo(120)
     music.playTone(494, music.beat(BeatFraction.Half))
@@ -30,7 +31,11 @@ input.onButtonPressed(Button.A, function () {
     music.playTone(330, music.beat(BeatFraction.Half))
     music.playTone(330, music.beat(BeatFraction.Whole))
 })
+input.onButtonPressed(Button.AB, function () {
+    music.stopAllSounds()
+})
 input.onButtonPressed(Button.B, function () {
+    music.stopAllSounds()
     light2 = 1
     music.setTempo(90)
     music.playTone(466, music.beat(BeatFraction.Half))
